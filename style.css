@@ -74,7 +74,7 @@ nav a:hover{
 /* CODE FOR MAIN TITLE */
 
 .main-title h1{
-    padding: 3vh 0;
+    padding: 5vh 0;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: firebrick;
@@ -131,4 +131,47 @@ nav a:hover{
     background: linear-gradient(to bottom right , firebrick 50% , red);
     color: white;
     border-radius: 1vh 1vw;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.cards button:hover{
+    border-radius: 0;
+    box-shadow: 3px 3px 0 black;
+}
+
+.many-more-heading{
+    padding: 0 0 8vh 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: firebrick;
+    font-size: 3vw;
+}
+
+/* CODE FOR SERVICES SECTION */
+
+.services-section{
+    display: flex;
+    justify-content: center;
+}
+
+.services{
+    margin: 0 5vw;
+    display: grid;
+    place-items: center;
+    gap: 2vh 0;
+}
+
+.services img{
+    width: 10vw;
+    transition: all .3s ease-out;
+}
+
+.services img:hover{
+    transform: scale(1.1);
+}
+
+.services p{
+    font-family: 'Raleway' , cursive;
+    font-weight: 900;
 }
