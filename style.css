@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* IMPORT STATEMENTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+/* CODE FOR NAVBAR */
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    background: #0f0f0f;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+nav > ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li{
+    margin-left: 2vw;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    transition: color .3s ease-out;  
+}
+
+nav a:hover{
+    color: firebrick;
+}
+
+.logo, .cart{
+    height: 5vh;
+    width: auto;
+    filter: invert();
+    transition: transform .3s ease-out;  
+    cursor: pointer;
+}
+
+.logo:hover , .cart:hover{
+    transform: scale(1.1) rotateZ(-5deg);
+}
+
+
+/* CODE FOR MAIN IMAGE */
+
+.main-img{
+    width: 100vw;
+
+}
+
+.main-img img{
+    width: 100%;
+}
+
+/* CODE FOR MAIN TITLE */
+
+.main-title h1{
+    padding: 3vh 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: firebrick;
+    font-size: 5vw;
+}
+
+/* CODE FOR SNEAKERS CARDS */
+
+.sneakers-card{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 0 2vw;
+    padding: 4vh 2vw;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 2vh 1vw;
+}
+
+.cards img{
+    width: 100%;
+    transform: rotateY(180deg);
+    transition: all .3s ease-out;
+    margin-bottom: 2vh;
+}
+
+.cards img:hover{
+    transform: rotateY(180deg) rotateZ(15deg) scale(0.9);
+}
+
+.cards h4{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Raleway' , sans-serif;
+}
+
+.cards p{
+    font-family: 'Rajdhani' , sans-serif;
+    margin: 2vh 0;
+}
+
+.cards button{
+    border: none;
+    padding: 2vh 2vw;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 900;
+    margin-top: auto;
+    align-self: center;
+    background: linear-gradient(to bottom right , firebrick 50% , red);
+    color: white;
+    border-radius: 1vh 1vw;
+}
