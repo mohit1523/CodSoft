@@ -95,6 +95,7 @@ nav a:hover{
     flex-direction: column;
     border: 1px solid;
     padding: 2vh 1vw;
+    box-shadow: 1vh 1vw 5px black;
 }
 
 .cards img{
@@ -174,4 +175,102 @@ nav a:hover{
 .services p{
     font-family: 'Raleway' , cursive;
     font-weight: 900;
+}
+
+/* CODE FOR SUBSCRIBE SECTION */
+
+.subscribe-heading{
+    padding: 6vh 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: firebrick;
+    font-size: 3vw;
+}
+
+.subscribe-section{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 5vh 0;
+}
+
+.subscribe{
+    border: 1px solid;
+    overflow: hidden;
+}
+
+#email{
+    border: none;
+    width: 30vw;
+    padding: 2vh 1vw;
+    font-family: 'Rajdhani' , sans-serif;
+}
+
+#email:focus{
+    outline: none;
+}
+
+.subscribe button{
+    height: 100%;
+    border: none;
+    padding: 2vh 2vw;
+    font-family: 'Raleway' , cursive;
+    font-weight: 900;
+    background: linear-gradient(to bottom right , red 20% , firebrick);
+    color: white;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.subscribe button:hover{
+    color: black;
+}
+
+/* CODE FOR FOOTER */
+
+footer{
+    background: linear-gradient(to bottom right , firebrick 30% , red);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+footer > div{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.other-links a{
+    position: relative;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    transition: all .3s ease-out;
+}
+
+.other-links a:hover{
+    box-shadow: 2px 2px 0 black inset , -2px -2px 0 black inset;
+    font-weight: 900;
+}
+
+.social-links img{
+    border-radius: 50vw;
+    width: 5vw;
+    cursor: pointer;
+    filter:  grayscale();
+    transition: all 0.3s ease-out;
+} 
+
+.social-links img:hover{
+    filter: none;
+}
+
+#copyright{
+    font-family: 'Rajdhani' , sans-serif;
 }

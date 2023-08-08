@@ -52,61 +52,105 @@
     <!-- CODE FOR SAMPLE SNEAKERS CARD -->
     <section class="sneakers-card">
       <div class="cards">
-          <img src="src/sneaker-1.png" alt="sneakers" />
-          <h4>Nike SB Dunk Low</h4>
-          <p>
-            Dressed in Classic Green, black, and black, this Nike SB Dunk Low Classic Green also features the popular Air Jordan 1’s "Black Toe" color blocking. The Nike SB Dunk Low Classic Green features a white leather upper with black overlays and Swooshes completed with Classic Green in the rear, laces, and tongue branding.
-          </p>
-          <button>Add To Cart</button>
+        <img src="src/sneaker-1.png" alt="sneakers" />
+        <h4>Nike SB Dunk Low</h4>
+        <p>
+          Dressed in Classic Green, black, and black, this Nike SB Dunk Low
+          Classic Green also features the popular Air Jordan 1’s "Black Toe"
+          color blocking. The Nike SB Dunk Low Classic Green features a white
+          leather upper with black overlays and Swooshes completed with Classic
+          Green in the rear, laces, and tongue branding.
+        </p>
+        <button>Add To Cart</button>
       </div>
       <div class="cards">
-          <img src="src/sneaker-2.png" alt="sneakers" />
-          <h4>Jordan 1 Retro High</h4>
-          <p>
-            This Jordan 1 Retro High consists of a green suede upper with black leather overlays and an iridescent Swoosh. An icy outsole, white midsole, and Zoom branding above the Swoosh completes the design. These sneakers released in 2020 and retailed for $175.
-          </p>
-          <button>Add To Cart</button>
+        <img src="src/sneaker-2.png" alt="sneakers" />
+        <h4>Jordan 1 Retro High</h4>
+        <p>
+          This Jordan 1 Retro High consists of a green suede upper with black
+          leather overlays and an iridescent Swoosh. An icy outsole, white
+          midsole, and Zoom branding above the Swoosh completes the design.
+          These sneakers released in 2020 and retailed for $175.
+        </p>
+        <button>Add To Cart</button>
       </div>
       <div class="cards">
-          <img src="src/sneaker-3.png" alt="sneakers" />
-          <h4>Bambi Tian Glitter Low</h4>
-          <p>
-            The Gucci Tian print is placed on sparkling glitter fabric, enriched with metallic leather details Print detail features a contemporary floral motif and screen landscapes Green metallic leather detail at the back of left shoe Red metallic leather detail at the back of right shoe
-          </p>
-          <button>Add To Cart</button>
+        <img src="src/sneaker-3.png" alt="sneakers" />
+        <h4>Bambi Tian Glitter Low</h4>
+        <p>
+          The Gucci Tian print is placed on sparkling glitter fabric, enriched
+          with metallic leather details Print detail features a contemporary
+          floral motif and screen landscapes Green metallic leather detail at
+          the back of left shoe Red metallic leather detail at the back of right
+          shoe
+        </p>
+        <button>Add To Cart</button>
       </div>
       <div class="cards">
-          <img src="src/sneaker-4.png" alt="sneakers" />
-          <h4>Adidas Alphabounce Beyond</h4>
-          <p>
-            Alphabounce Beyond has a'footprint neutral, the rebound provides an energy and comfort throughout the day. The upper is suede, the mesh is breathable, the forefoot is instead forged. Technology Sole Adiwear offers the ultimate in terms of wear resistance.
-          </p>
-          <button>Add To Cart</button>
+        <img src="src/sneaker-4.png" alt="sneakers" />
+        <h4>Adidas Alphabounce Beyond</h4>
+        <p>
+          Alphabounce Beyond has a'footprint neutral, the rebound provides an
+          energy and comfort throughout the day. The upper is suede, the mesh is
+          breathable, the forefoot is instead forged. Technology Sole Adiwear
+          offers the ultimate in terms of wear resistance.
+        </p>
+        <button>Add To Cart</button>
       </div>
     </section>
     <h3 class="many-more-heading">And Many More .........</h3>
-    <!--  -->
 
     <!-- CODE FOR SERVICES SECTION -->
     <section class="services-section">
       <div class="services">
-        <img src="src/customer-service.png" alt="service">
-        <p>
-          24 / 7 Customer Support
-        </p>
+        <img src="src/customer-service.png" alt="service" />
+        <p>24 / 7 Customer Support</p>
       </div>
       <div class="services">
-        <img src="src/delivery.png" alt="service">
-        <p>
-          Shipping and Delivery 
-        </p>
+        <img src="src/delivery.png" alt="service" />
+        <p>Shipping and Delivery</p>
       </div>
       <div class="services">
-        <img src="src/return-policy.png" alt="service">
-        <p>
-          Returns and Exchanges
-        </p>
+        <img src="src/return-policy.png" alt="service" />
+        <p>Returns and Exchanges</p>
       </div>
     </section>
+
+    <!-- CODE FOR EMAIL SUBSCRIPTION -->
+    <h3 class="subscribe-heading">Subscribe For Latest Updates</h3>
+    <section class="subscribe-section">
+      <form action="" method="get" class="subscribe">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- CODE FOR FOOTER -->
+    <footer>
+      <div class="other-links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Security</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="social-links">
+        <img src="src/twitter-logo.png" alt="twitter">
+        <img src="src/fb-logo.png" alt="fb">
+        <img src="src/linkedin-logo.png" alt="linkedin">
+        <img src="src/insta-logo.png" alt="insta">
+      </div>
+      <div id="copyright"></div>
+    </footer>
+
+    <script>
+      let copy = document.getElementById('copyright');
+      let dt = new Date();
+      copy.innerHTML = `Copyright &copy; ${dt.getFullYear()} SoleSphere`;
+    </script>
   </body>
 </html>
