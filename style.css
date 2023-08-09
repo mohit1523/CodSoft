@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+*::selection{
+    color: red;
+    background-color: black;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -48,7 +53,7 @@ nav a:hover{
     color: firebrick;
 }
 
-.logo, .cart{
+.logo{
     height: 5vh;
     width: auto;
     filter: invert();
@@ -56,7 +61,7 @@ nav a:hover{
     cursor: pointer;
 }
 
-.logo:hover , .cart:hover{
+.logo:hover{
     transform: scale(1.1) rotateZ(-5deg);
 }
 
@@ -81,6 +86,30 @@ nav a:hover{
     font-size: 5vw;
 }
 
+/* CODE FOR ABOUT US SECTION */
+
+.about-us{
+    display: flex;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin: 5vh 0;
+}
+
+.about-us h1{
+    background-color: firebrick;
+    padding: 2vh 2vw;
+    font-family: 'Rajdhani' , sans-serif;
+    font-size: 3vw;
+    color: white;
+}
+
+.about-us p{
+    padding: 2vh 2vw;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
 /* CODE FOR SNEAKERS CARDS */
 
 .sneakers-card{
@@ -95,7 +124,6 @@ nav a:hover{
     flex-direction: column;
     border: 1px solid;
     padding: 2vh 1vw;
-    box-shadow: 1vh 1vw 5px black;
 }
 
 .cards img{
@@ -120,6 +148,7 @@ nav a:hover{
 .cards p{
     font-family: 'Rajdhani' , sans-serif;
     margin: 2vh 0;
+    font-size: 2vw;
 }
 
 .cards button{
@@ -225,6 +254,21 @@ nav a:hover{
     color: black;
 }
 
+/* CODE FOR JOIN SECTION */
+
+.join h1{
+    padding: 3vh 3vw;
+    font-size: 3vw;
+    font-family: 'Rajdhani' , sans-serif;
+}
+
+.join p{
+    padding: 0vh 3vw 3vh 3vw;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
 /* CODE FOR FOOTER */
 
 footer{
@@ -273,4 +317,81 @@ footer > div{
 
 #copyright{
     font-family: 'Rajdhani' , sans-serif;
+}
+
+@media screen and (max-width:650px) {
+    nav li{
+        margin-left: 4vw;
+    }
+    .logo{
+        height: 3vh;
+    }
+    .main-img{
+        height: 50vh;
+    }
+    .main-img img{
+        height: 100%;
+    }
+    .main-title h1{
+        padding: 2vh 3vw;
+        font-size: 8vw;
+    }
+    .about-us{
+        margin: 2vh 0;
+        flex-direction: column;
+    }
+    .about-us h1{
+        font-size: 5vw;
+    }
+    .about-us p{
+        font-size: 3.5vw;
+    }
+    .sneakers-card{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2vh 2vw;
+    }
+    .cards h4{
+        font-size: 5vw;
+    }
+    .cards p{
+        font-size: 3.5vw;
+    }
+    .cards button{
+        padding: 2vh 5vw;
+    }
+    .many-more-heading{
+        font-size: 5vw;
+    }
+    .services img{
+        width: 20vw;
+    }
+    .services p{
+        font-size: 3.5vw;
+    }
+    .subscribe-section{
+        padding: 0 0 2vh 0;
+    }
+    .subscribe-heading{
+        font-size: 5vw;
+    }
+    #email{
+        width: 50vw;
+        padding: 1vh 2vw;
+    }
+    .subscribe button{
+        padding: 2vh 4vw;
+    }
+    .join h1{
+        font-size: 5vw;
+    }
+    .join p{
+        font-size: 3.5vw;
+    }
+    footer > div{
+        width: 75vw;
+    }
+    
+    .social-links img{
+        width: 10vw;
+    }
 }
